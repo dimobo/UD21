@@ -88,8 +88,8 @@ class GeometriaTest {
 		System.out.println("testAreaRombo()");
 		int D = 4, d = 8;
 		double area = (D * d) / 2;
-		geo[5].setArea(geo[5].arearombo(D, d));
-		assertEquals(area, geo[5].getArea());
+		geo[6].setArea(geo[6].arearombo(D, d));
+		assertEquals(area, geo[6].getArea());
 	}
 
 	@Test
@@ -97,8 +97,8 @@ class GeometriaTest {
 		System.out.println("testAreaRomboide()");
 		int b = 4, h = 8;
 		double area = b * h;
-		geo[5].setArea(geo[5].arearomboide(b, h));
-		assertEquals(area, geo[5].getArea());
+		geo[7].setArea(geo[7].arearomboide(b, h));
+		assertEquals(area, geo[7].getArea());
 
 	}
 
@@ -107,8 +107,8 @@ class GeometriaTest {
 		System.out.println("testAreaTrapecio()");
 		int B = 2, b = 4, h = 8;
 		double area = ((B + b) / 2) * h;
-		geo[5].setArea(geo[5].areatrapecio(B, b, h));
-		assertEquals(area, geo[5].getArea());
+		geo[8].setArea(geo[8].areatrapecio(B, b, h));
+		assertEquals(area, geo[8].getArea());
 
 	}
 
@@ -119,6 +119,12 @@ class GeometriaTest {
 		geo[1].setArea(geo[1].areacuadrado(cos));
 		System.out.println(geo[1].toString());
 		assertEquals(geo[1].toString(), "Geometria [id=1, nom=cuadrado, area=4.0]");
+	}
+	
+	@Test
+	public void testGetNom() {
+		System.out.println("testAreaTrapecio()");
+		assertEquals("cuadrado", geo[1].getNom());
 	}
 
 }
